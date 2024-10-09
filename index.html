@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <a href="/"><img src="img/logo.svg" alt="Rock Paper Scissors" /></a>
+        <div class="score">
+            <span>SCORE</span>
+            <strong class="score-number"></strong>
+        </div>
+    </header>
+    <main>
+        <!-- STEP 1 -->
+        <section class="step-1">
+            <button class="button button-paper paper" data-pick="paper">
+                <div class="button_image-wrapper">
+                    <img src="img/icon-paper.svg" alt="paper" />
+                </div>
+            </button>
+            <button class="button button-scissors scissors" data-pick="scissors">
+                <div class="button_image-wrapper">
+                    <img src="img/icon-scissors.svg" alt="scissors" />
+                </div>
+            </button>
+            <button class="button button-rock rock" data-pick="rock">
+                <div class="button_image-wrapper">
+                    <img src="img/icon-rock.svg" alt="rock" />
+                </div>
+            </button>
+        </section>
+        <!-- STEP 2 -->
+        <section class="step-2 hidden">
+            <div class="column player-column">
+                <h2>YOU PICKED</h2>
+            </div>
+            <div class="column result-column result-hidden">
+                <span class="result"></span>
+                <button class="play-again-btn">PLAY AGAIN</button>
+            </div>
+            <div class="column house-column">
+                <h2>THE HOUSE PICKED</h2>
+                <div class="picked scissors">
+                    <div class="house-picked-empty"></div>
+                    <div class="picked_image-wrapper">
+                        <img src="img/icon-scissors.svg" alt="scissors" />
+                    </div>
+                </div>
+            </div>
+            <header></header>
+        </section>
+    </main>
+    <footer>
+        <button class="rules-btn">RULES</button>
+        <div class="rules-modal hidden">
+            <section class="rules">
+                <header>
+                    <h2>RULES</h2>
+                </header>
+                <button class="close-modal">
+                    <img src="img/icon-close.svg" alt="close rules" />
+                </button>
+                <img src="img/image-rules.svg" alt="rules" />
+            </section>
+        </div>
+        <p class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+            <a href="https://github.com/bell-ohh" target="_blank">Belloaise C.</a>.
+        </p>
+    </footer>
+    <script src="/custom.js"></script>
+
+
+</body>
+
+</html>
